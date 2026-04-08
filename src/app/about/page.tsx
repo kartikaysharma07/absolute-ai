@@ -9,8 +9,8 @@ export default function AboutPage() {
   const logos = [
     { src: '/logos/logo.webp', alt: 'SEO Harbour' },
     { src: '/logos/logo2.webp', alt: 'LaunchPal AI' },
-    { src: '/logos/azorus.png', alt: 'Azorus' },
-    { src: '/logos/overhaulconsulting.png', alt: 'Overhaul Consulting' },
+    { src: '/logos/azorus.webp', alt: 'Azorus' },
+    { src: '/logos/overhaulconsulting.webp', alt: 'Overhaul Consulting' },
   ];
 
   return (

@@ -8,45 +8,45 @@ import { motion } from 'framer-motion';
 const logos = [
   { src: '/logos/logo.webp', alt: 'SEO Harbour' },
   { src: '/logos/logo2.webp', alt: 'LaunchPal AI' },
-  { src: '/logos/azorus.png', alt: 'Azorus' },
-  { src: '/logos/overhaulconsulting.png', alt: 'Overhaul Consulting' },
+  { src: '/logos/azorus.webp', alt: 'Azorus' },
+  { src: '/logos/overhaulconsulting.webp', alt: 'Overhaul Consulting' },
 ];
 
 const services = [
   {
     title: 'AI-Driven Efficiency',
     desc: 'Streamline operations with intelligent automation.',
-    icon: '/images/1.png',
+    icon: '/images/1.webp',
     link: '/services#ai-efficiency',
   },
   {
     title: 'Venture Studio',
     desc: 'Partnering to Launch your startup.',
-    icon: '/images/2.png',
+    icon: '/images/2.webp',
     link: '/services#process-refinement',
   },
   {
     title: 'AI Digital Marketing',
     desc: 'Implement smart marketing tools.',
-    icon: '/images/3.png',
+    icon: '/images/3.webp',
     link: '/services#digital-marketing',
   },
   {
     title: 'AI for Diversification',
     desc: 'Explore new opportunities with AI insights.',
-    icon: '/images/4.png',
+    icon: '/images/4.webp',
     link: '/services#diversification',
   },
   {
     title: 'AI Product Development',
     desc: 'End-to-end AI solution implementation.',
-    icon: '/images/5.png',
+    icon: '/images/5.webp',
     link: '/services#product-development',
   },
   {
     title: 'Agentic Workforce',
     desc: 'Develop autonomous AI agents.',
-    icon: '/images/6.png',
+    icon: '/images/6.webp',
     link: '/services#agentic-workforce',
   },
 ];

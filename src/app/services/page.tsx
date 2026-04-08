@@ -33,7 +33,7 @@ export default function Services() {
                 id: 'generative-ai',
                 title: 'Generative AI',
                 desc: 'Harness the power of Generative AI to create dynamic content, personalize customer experiences, and automate complex workflows.',
-                icon: '/images/1.png',
+                icon: '/images/1.webp',
                 features: ['AI-powered content creation', 'Custom model development', 'Workflow automation'],
                 value: 'Accelerate innovation and reduce costs with scalable AI solutions.',
                 color: 'text-teal-600',

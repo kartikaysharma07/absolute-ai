@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-teal-600 to-blue-600',
     icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
     link: '/blog/future-of-agentic-ai',
-    image: '/images/hero1.png',
+    image: '/images/hero1.webp',
   },
   {
     title: 'Absolute AI Expands Services to Maritime Industries',
@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-orange-600 to-orange-700',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
     link: '/blog/maritime-expansion',
-    image: '/images/hero2.png',
+    image: '/images/hero2.webp',
   },
   {
     title: 'Building Intelligent Automation',
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-purple-600 to-indigo-600',
     icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
     link: '/blog/intelligent-automation',
-    image: '/images/hero3.png',
+    image: '/images/hero3.webp',
   },
   {
     title: 'How AI Reduced Operational Costs by 45% for Local Startup',
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-green-600 to-teal-600',
     icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
     link: '/blog/cost-reduction-case-study',
-    image: '/images/hero4.png',
+    image: '/images/hero4.webp',
   },
   {
     title: 'AI Ethics in Business Operations',
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-pink-600 to-rose-600',
     icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
     link: '/blog/ai-ethics-framework',
-    image: '/images/hero5.png',
+    image: '/images/hero5.webp',
   },
   {
     title: '2025 AI Predictions: What’s Next for Business Intelligence',
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-yellow-600 to-orange-600',
     icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
     link: '/blog/ai-predictions-2025',
-    image: '/images/hero6.png',
+    image: '/images/hero6.webp',
   },
   {
     title: 'AI-Driven Customer Support',
@@ -78,7 +78,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-green-600 to-teal-600',
     icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
     link: '/blog/customer-support',
-    image: '/images/hero7.png',
+    image: '/images/hero7.webp',
   },
   {
     title: 'Data Pipeline Optimization',
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-pink-600 to-rose-600',
     icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
     link: '/blog/data-pipeline',
-    image: '/images/hero8.png',
+    image: '/images/hero8.webp',
   },
   {
     title: 'Agentic Workflow Automation',
@@ -98,6 +98,6 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-yellow-600 to-orange-600',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
     link: '/blog/workflow-automation',
-    image: '/images/hero9.png',
+    image: '/images/hero9.webp',
   },
 ];
