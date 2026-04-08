@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: 'Absolute AI Consulting',
-  shortName: 'Absolute AI',
+  name: 'Autolead AI',
+  shortName: 'Autolead AI',
   description:
-    'Absolute AI Consulting builds GenAI, agentic systems, data engineering, and automation solutions that help businesses grow faster.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://absoluteaiconsulting.com',
-  email: 'hello@absoluteaiconsulting.com',
+    'Autolead AI builds GenAI, agentic systems, data engineering, and automation solutions that help businesses grow faster.',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://autoleadai.com',
+  email: 'hello@autoleadai.com',
   twitter: '@AbsoluteAI',
   stripe: {
     strategyPriceId: process.env.NEXT_PUBLIC_STRIPE_STRATEGY_PRICE_ID ?? '',
@@ -12,15 +12,13 @@ export const siteConfig = {
     enterprisePriceId: process.env.NEXT_PUBLIC_STRIPE_ENTERPRISE_PRICE_ID ?? '',
   },
   keywords: [
-    'Absolute AI Consulting',
-    'Absolute AI',
+    'Autolead AI',
     'AI consulting',
     'generative AI',
     'agentic systems',
     'AI automation',
     'data engineering',
     'business AI solutions',
-    'Halifax AI consulting',
   ],
 };
 

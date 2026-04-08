@@ -6,7 +6,7 @@ export default function Head() {
       <title>About {siteConfig.shortName} | AI Consulting Team</title>
       <meta
         name="description"
-        content="Learn how Absolute AI Consulting helps organizations ship GenAI, automation, and data engineering solutions faster."
+        content="Learn how Autolead AI helps organizations ship GenAI, automation, and data engineering solutions faster."
       />
       <link rel="canonical" href={getSiteUrl('/about')} />
     </>

@@ -112,7 +112,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Stay Informed with Absolute AI
+            Stay Informed with Autolead AI
           </motion.h2>
           <motion.p
             className="text-lg mb-8 max-w-2xl mx-auto"

@@ -66,7 +66,7 @@ export default function ContactPage() {
       const result: unknown = await response.json();
 
       if (response.ok) {
-        setStatus('Thank you for your interest. Team Absolute AI Consulting will contact you soon.');
+        setStatus('Thank you for your interest. Team Autolead AI will contact you soon.');
         form.reset();
       } else {
         if (typeof result === 'object' && result !== null) {
@@ -404,19 +404,19 @@ export default function ContactPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Contact Absolute AI Consulting
+            Contact Autolead AI
           </motion.h2>
           <div>
             Email us:{' '}
             <a
               href="mailto:hello@absoluteaiconsulting.com"
               className="underline text-blue-300 hover:text-blue-400 transition"
-              aria-label="Email Absolute AI Consulting"
+              aria-label="Email Autolead AI"
             >
               hello@absoluteaiconsulting.com
             </a>
           </div>
-          <div className="mt-2 text-sm">Absolute AI Consulting, Inc. — Serving global clients</div>
+          <div className="mt-2 text-sm">Autolead AI, Inc. — Serving global clients</div>
         </div>
       </section>
 
