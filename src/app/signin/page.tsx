@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { supabaseBrowserClient } from '../../lib/supabase/browser';
+import SignInButton from '../../components/SignInButton';
 import { upsertUserProfile } from '../../lib/auth';
 
 type Mode = 'signin' | 'signup';
@@ -207,19 +208,9 @@ export default function SignInPage() {
                 </button>
               </div>
 
-              <motion.button
-                type="button"
-                onClick={() => void handleGoogleSignIn()}
-                disabled={loading || !isConfigured}
-                className="flex w-full items-center justify-center gap-3 rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
-                whileHover={{ y: -1 }}
-                whileTap={{ scale: 0.99 }}
-              >
-                <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="#EA4335" d="M12 10.2v3.95h5.48c-.24 1.3-1.5 3.8-5.48 3.8-3.3 0-5.99-2.74-5.99-6.12S8.7 5.71 12 5.71c1.88 0 3.14.8 3.86 1.49l2.63-2.53C16.8 3.11 14.7 2 12 2 6.48 2 2 6.48 2 12s4.48 10 10 10c5.73 0 9.52-4.03 9.52-9.7 0-.65-.07-1.14-.16-1.6H12z" />
-                </svg>
-                Continue with Google
-              </motion.button>
+              <div>
+                <SignInButton />
+              </div>
 
               <div className="my-6 flex items-center gap-3 text-sm text-slate-400">
                 <span className="h-px flex-1 bg-slate-200" />

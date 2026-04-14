@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { stripe } from '../../../../lib/stripe/server';
+import { getPlanIdByPriceId } from '../../../../lib/stripe/client';
 import { createClient } from '@supabase/supabase-js';
 
 export const runtime = 'nodejs';
@@ -75,6 +76,33 @@ async function saveStripePayment(session: Stripe.Checkout.Session) {
           },
           { onConflict: 'stripe_subscription_id' },
         );
+        // Also update simple subscription and profile plan for application-level access
+        try {
+          const planIdFromPrice = getPlanIdByPriceId(priceItem?.id ?? null);
+          const assignedPlan = session.metadata?.planId ?? planIdFromPrice ?? null;
+          if (userId && assignedPlan) {
+            await serviceClient.from('subscriptions_simple').upsert(
+              {
+                user_id: userId,
+                plan: assignedPlan,
+                status: subscription.status,
+                created_at: new Date().toISOString(),
+              },
+              { onConflict: 'user_id' },
+            );
+
+            await serviceClient.from('profiles').upsert(
+              {
+                id: userId,
+                plan: assignedPlan,
+                updated_at: new Date().toISOString(),
+              },
+              { onConflict: 'id' },
+            );
+          }
+        } catch (err) {
+          console.error('Failed to upsert simple subscription or profile plan:', err);
+        }
       }
     }
   }
@@ -127,6 +155,36 @@ async function upsertSubscription(subscription: Stripe.Subscription) {
     },
     { onConflict: 'stripe_subscription_id' },
   );
+
+  // Mirror to simple subscription and profile plan
+  try {
+    const price = subscription.items.data[0]?.price;
+    const planIdFromPrice = getPlanIdByPriceId(price?.id ?? null);
+    const assignedPlan = subscription.metadata?.planId ?? planIdFromPrice ?? null;
+    const userId = subscription.metadata?.supabase_user_id || null;
+    if (userId && assignedPlan) {
+      await serviceClient.from('subscriptions_simple').upsert(
+        {
+          user_id: userId,
+          plan: assignedPlan,
+          status: subscription.status,
+          created_at: new Date().toISOString(),
+        },
+        { onConflict: 'user_id' },
+      );
+
+      await serviceClient.from('profiles').upsert(
+        {
+          id: userId,
+          plan: assignedPlan,
+          updated_at: new Date().toISOString(),
+        },
+        { onConflict: 'id' },
+      );
+    }
+  } catch (err) {
+    console.error('Failed to mirror subscription to simple table or profile:', err);
+  }
 }
 
 async function saveInvoicePayment(invoice: Stripe.Invoice) {
