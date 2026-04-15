@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'Autolead AI',
   description:
     'Autolead AI builds GenAI, agentic systems, data engineering, and automation solutions that help businesses grow faster.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://autoleadai.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://autoleadai.com',
   email: 'hello@autoleadai.com',
   twitter: '@AbsoluteAI',
   stripe: {

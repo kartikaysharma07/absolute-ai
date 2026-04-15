@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev -H 0.0.0.0 --turbopack",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "bunx biome lint --write && bunx tsc --noEmit",
     "format": "bunx biome format --write"
   },
